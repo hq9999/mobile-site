@@ -1,0 +1,95 @@
+  @import "base";
+
+/*--------tab2-----*/
+.txt-box{
+  width:100%;
+  height: 100%;
+  padding:5%;
+}
+.txt-box>p{
+  color: #666;
+  font-size: 16px;
+  line-height:30px;
+}
+/*--------tab2-----*/
+.desc{
+  width:100%;
+  height: 100%;
+  position:relative;
+  top:85px;
+  color: #666;
+  font-size:18px;
+}
+.desc>p{
+  color: #666;
+  font-size: 16px;
+  line-height:30px;
+}
+.price{
+  color:#d41213;
+}
+.desc .img-box{
+  width:100%;
+  overflow-x:auto;
+}
+.info{
+  padding:5%;
+  padding-bottom:13%;
+  background:#f3eff0;
+}
+.num>del{
+  color:#666;
+  margin-left:20px;
+}
+.img-box>ul{
+  width: 130%;
+  max-width:640px;
+}
+.img-box>ul>li{
+  float: left;
+  width: 33.333%;
+}
+.control{
+  width:85px;
+  height:40px;
+  margin:20px auto;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+  background: #bcbcbc;
+  padding:15px 12px;
+}
+.control>li{
+  width:10px;
+  height: 10px;
+  background:#969696;
+  float:left;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  margin:0 5px;
+}
+.control>li.now{
+  background:#e9e9e9;
+}
+.dec {
+  line-height: 80px;
+  font-size: 28px;
+  text-align: center;
+}
+.btn{
+  background: #a3a3a3;
+  width: 100%;
+  padding:8px 0;
+}
+.btn>a{
+  font-size:30px;
+  text-align: center;
+  display: block;
+  line-height:80px;
+  margin:8px auto;
+  width:90%;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+  height:90%;
+  color:#fff;
+  background:#b21e1e;
+}

@@ -1,0 +1,130 @@
+body,html,div,dl,ul,li,dt,dd,img,ol,p,h1,h2,h3,h4,h5,h6{
+  margin:0;
+  padding:0;
+}
+*{
+  box-sizing: border-box;
+  -webkit-tap-highlight-color:transparent;
+  tab-highlight-color:transparent;
+}
+html,body{
+
+  width:100%;
+  height:100%;
+}
+i{font-style: normal;}
+body{
+  font-size:14px;
+  font-family:"Microsoft yaHei";
+}
+.clearfix:after,.clearfix:before{
+  content:"";
+  display:block;
+  clear:both;
+  height:0;
+  visibility:hidden;
+}
+.clearfix{zoom: 1;}
+img{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border:0;
+}
+a{text-decoration: none}
+ul,li{list-style:none}
+.container{
+  position: relative;
+  max-width: 640px;
+  margin:0 auto;
+  min-width: 300px;
+  width:100%;
+  height: 100%;
+}
+.content{
+  position:relative;
+  top:85px;
+  width: 100%;
+  height: 100%;
+}
+.bom-box,.top-box{
+  width:100%;
+  z-index:1000;
+  position: fixed;
+}
+.bom-box{
+  bottom:0;
+  height: 96px;
+}
+.bom,.top{
+  max-width: 640px;
+  min-width: 300px;
+  position: relative;
+  width: 100%;
+}
+.top{
+  height: 85px;
+  background:#ad1d1c;
+  border-top:1px solid #c92b2a;
+}
+.line{
+  position: absolute;
+  font-size:60px;
+  line-height:85px;
+  color: #fff;
+  left:15px;
+  font-family: "SimSun";
+}
+.bom{
+  margin:0 auto;
+  height:96px;
+  background:#484850;
+  border-top:1px solid #ccc;
+}
+.top>h2{
+  font-size:38px;
+  font-weight:normal;
+  color: #fff;
+  width:100%;
+  line-height:85px;
+  text-align:center;
+}
+.icon-cart{
+  position: absolute;
+  right:10px;
+  display:block;
+  width: 22%;
+  height:66%;
+  top:15px;
+  -webkit-border-radius:15px;
+  border-radius:15px;
+  -webkit-box-shadow:0 0 2px 2px rgba(10,10,10,.5);
+  box-shadow:0 0 2px 2px rgba(10,10,10,.5);
+  border:1px solid #cd504e;
+  background:#ad1d1c url("../images/cart.png")no-repeat center;
+}
+/*---------bom-----------*/
+.bom>ul{
+  width: 100%;
+  height:100%;
+}
+.bom>ul>li{
+  width:20%;
+  height:100%;
+  float:left;
+  border-top:5px solid #484850;
+  //background: url("../images/bom.png")no-repeat;
+}
+.bom>ul>li>img{
+  width:70%;
+  height:75%;
+  margin:14% 0 0 17%;
+}
+//@for $i from 0 through 5{
+//  .bom>ul>li:nth-of-type(#{$i+1}){
+//    background-position:-128*$i+px 0;
+//  }
+//}
+.bom>ul>li.active{
+  border-top:5px solid #d71110;
+}
